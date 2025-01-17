@@ -13,7 +13,7 @@ using namespace std;											//Problem 2 (c)			allows use of cout w/o ::std
 
 int main()
 {
-	cout << "*****************************" << endl;			//Problem #1
+	cout << "*****************************" << endl;			//Problem #1. Alligned oddly when places correctly in code line. edited to be constant in terminal
 	cout << "* Homework 1		  *"  << endl;
 	cout << "* CE 122		  *" << endl ;
 	cout << "* Author: Sydney Flower	  * " << endl ;
