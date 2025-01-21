@@ -1,10 +1,8 @@
 /*
-******************************
-* Homework 1				 *
-*CE 122						 *
-*Author: Sydney Flower		 *
-*Due Date : January 22		 *
-******************************
+Homework 1
+CE 122
+Sydney Flower
+January 22, 2025
 */
 
 #include<iostream>												//Problem 2 (b)			allows us to print to console and read in data
@@ -13,7 +11,7 @@ using namespace std;											//Problem 2 (c)			allows use of cout w/o ::std
 
 int main()
 {
-	cout << "*****************************" << endl;			//Problem #1. Alligned oddly when places correctly in code line. edited to be constant in terminal
+	cout << "*****************************" << endl;			//Problem #1
 	cout << "* Homework 1		  *"  << endl;
 	cout << "* CE 122		  *" << endl ;
 	cout << "* Author: Sydney Flower	  * " << endl ;
@@ -32,6 +30,10 @@ int main()
 
 	cout << "num1 = " << num1 << ", num2 = " << num2 << ", num3 = " << num3 << endl << "The average of the three variables is " << average << endl	;		//Problem #2 (g)
 
+	double x, y, z;												//Problem #3 
+	cout << "Please enter 3 quiz scores : " << endl;			//						asks user for 3 quiz scores
+	cin >> x >> y >> z;										
+	cout << "The average of the three scores you entered is: " << (x + y + z) / 3;	 //prints out the average of the 3 quiz scores
 
 		return 0;
 }
