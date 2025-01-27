@@ -9,11 +9,28 @@ Due: 29 January 2025
 
 using namespace std;
 
+#include <string>			//string -data type thats a list of characters
+
 int main()
 {
-	int x = 5.6;
-	cout << x;
-	return (0);
+	double x, y, z;
+	cout << "Hello! Please enter three decimal numbers : " << endl;			//Problem 1] asks user for 3 decimals, sums them, and returns as an int
+	cin >> x >> y >> z;
+	int a = x + y + z;
+	cout << "The sum of your numbers as an interger is : " << a;
+
+	double w;																//Problem 2] asks user for a weight in kg and converts/returns as lbs
+	cout << "Please enter a weight in kilograms : " << endl;
+	cin >> w;
+	double l;
+	l = w * 2.205;
+	cout << "The weight converted to pounds is : " << l << endl;
+
+	string name;															//Problem 3] asks user their name and greets them
+	cout << "Please enter your name : " << endl;
+	cin >> name;
+	getline(cin, name);														
+	cout << "Hello " << name << "! It's nice to meet you" << endl;
 
 }
 
