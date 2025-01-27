@@ -17,7 +17,7 @@ int main()
 	cout << "Hello! Please enter three decimal numbers : " << endl;			//Problem 1] asks user for 3 decimals, sums them, and returns as an int
 	cin >> x >> y >> z;
 	int a = x + y + z;
-	cout << "The sum of your numbers as an interger is : " << a << endl;
+	cout << "The sum of your numbers as an interger is : " << a  << endl;
 
 	double w;																//Problem 2] asks user for a weight in kg and converts/returns as lbs
 	cout << "Please enter a weight in kilograms : " << endl;
@@ -28,9 +28,11 @@ int main()
 
 	string name;															//Problem 3] asks user their name and greets them
 	cout << "Please enter your name : " << endl;
-	cin >> name;
-	getline(cin, name);														
+	getline(cin, name);
 	cout << "Hello " << name << "! It's nice to meet you" << endl;
+
+	return 0;
+}
 
 }
 
