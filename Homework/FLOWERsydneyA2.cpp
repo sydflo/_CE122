@@ -31,6 +31,14 @@ int main()
 	getline(cin, name);
 	cout << "Hello " << name << "! It's nice to meet you" << endl;
 
+	/*
+ 	Problem 4]
+  	For the first scenario:
+  	height = 6.3
+   	name = Jose Silva
+
+    	For the second scenario
+ 	*/
 	return 0;
 }
 
