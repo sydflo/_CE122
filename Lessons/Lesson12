@@ -1,0 +1,68 @@
+/*
+Sydney Flower
+CE 122
+Lecture 12
+7 February 2025
+*/
+
+#include <iostream>
+#include <iomanip>			//allows I/O manipulators
+#include <string>
+
+using namespace std;
+
+int	main()
+{
+
+
+	return 0;
+}
+
+/*
+
+What order does this go in? PEMDAS for C++ 
+		order of precedince
+			1. !		NOT (TRUE -> FALSE , FALSE -> TRUE)
+			2. *,/,%	MULTIPLICATION/DIVISION/MODULUS
+			3. +,-		ADDITION/SUBTRACTION
+			4. <,>,<=,>=	RELATIONAL
+			5. ==, !=	EQUAL/NOT EQUAL
+			6. &&		AND 
+			7. ||		OR
+			8. =		ASSIGNMENT
+
+	IF GIVEN : 11 > 5 || 6 > 15 && 7 >= 8
+		SOOOOO 11>5 TRUE and 6 > 15 TRUE and 7 >=8 FALSE
+			then TRUE and FALSE = False
+				then TRUE or FALSE = TRUE
+					WHOLE = TRUE
+
+RELATIONAL VALUES
+	<,<=,>,>=
+	WORK FOR STRINGS AND CHARACTERS -- ASCII
+
+	CHARACTERS
+	'A' < 'D'		TRUE
+	'Z' > 'E'		TRUE
+	'a' < 'B'		FALSE
+
+	STRINGS
+	table is lexicographically 
+	n1 = "elephant"
+	n2 = "dog"
+	looks at first letter then sees which one comes first
+	n2 < n1 'd' comes before 'e'
+
+	If I want to check 0<=num<=10
+		them (0<=num)&&(num<=10)
+
+and (&&) or (||) not (!)
+
+if (numGrade < 0 || numGrade > 100);
+{
+cout << "invalid grade";
+}
+
+
+
+*/
