@@ -1,0 +1,61 @@
+/*
+Sydney Flower
+CE 122
+Lecture 15: ch 6 user-defined functions
+24 February 2025
+*/
+
+#include <iostream>
+#include <fstream>
+#include <cmath>		//math function - access to sqrt,pwrs,exponentials,sin/cos
+
+using namespace std;
+
+const double PI = 3.14159;		//const forces it to stay same
+
+double areaRectangle(double length, double width);
+
+double areaCircle(double radius);
+
+int main()
+{
+	cout << "area of 4x7 rectangle is " << areaRectangle(4, 7) << endl;
+
+	double radius;
+	cout << "Enter the radius of the circle: ";
+	cin >> radius;
+	double area = areaCircle(radius);
+	cout << "area of the circle is: " << area << endl;
+
+	return 0;	//return an int because function defined as int
+}
+
+double areaRectangle(double length, double width)
+{
+	double a = length * width;
+
+	return a;
+}
+
+double areaCircle(double radius)
+{
+	double a = 2 * PI * (radius * radius);
+
+	return a;
+}
+/*
+//	
+	double cos(double num);	() in parenthesis is the argument
+	double sqrt(double num);
+
+	return types:
+	abs			-> absolute value
+	ceil		
+	exp(x)		->	e**x
+	pow(x,y)	->	x**y
+
+	returntype		functionname(types/arguments);
+	int float double			int,float,double
+
+	#define PI 3.14159;		find and replace
+*/
