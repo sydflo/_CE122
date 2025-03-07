@@ -1,0 +1,37 @@
+/*
+Sydney Flower
+CE 122
+Lesson 18
+7 March 2024
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void getInfo(string& name, int& age);
+
+int main()
+{
+	string name = "Jane";
+	int age = 18;
+	getInfo(name, age);
+	cout << "Updated name: " << name << endl;
+	cout << "Updated age: " << age << endl;
+
+	return 0;
+}
+
+void getInfo(string& n, int& a)
+{
+	cout << "Enter your name: ";
+	cin >> n;
+	cout << endl <<  "Enter your age: ";
+	cin >> a;
+
+}
+/*
+* n and a are local to getInfo fucntiion
+* name and age are local to the main function
+*/
