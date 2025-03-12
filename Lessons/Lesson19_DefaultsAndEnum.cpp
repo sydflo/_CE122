@@ -52,4 +52,5 @@ i.e
 	-
 	color myColor1 = RED;
 	color myColor2 = BLUE;
+ ints associated with color Type are red 0,yellow 1, orange 2, blue 3, green 4
 */
