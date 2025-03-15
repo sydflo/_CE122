@@ -5,10 +5,11 @@ Homework 6
 14 March 2025
 */
 
+
 #include <iostream>
 #include <fstream>
 #include <cctype>
-
+#include <iomanip>
 using namespace std;
 
 // Function prototypes
@@ -111,7 +112,7 @@ void menuSystem()
             }
         }
         
-        receipt << "Total: $" << total << endl;
+        receipt << "Total: $" << fixed << setprecision(2) << total << endl;
         receipt.close();
     } 
     else 
