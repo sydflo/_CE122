@@ -45,7 +45,8 @@ int main() {
     return 0;
 }
 
-bool isPrime(int n) {
+bool isPrime(int n)
+{
     if (n < 2) return false;
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) return false;
@@ -53,7 +54,8 @@ bool isPrime(int n) {
     return true;
 }
 
-void findPrimes() {
+void findPrimes() 
+{
     ofstream file("primes.txt");
     if (file) {
         for (int i = 2; i < 2000; i++) {
@@ -63,14 +65,17 @@ void findPrimes() {
         }
         file << endl;
         file.close();
-    } else {
+    } else 
+    {
         cout << "Error opening file." << endl;
     }
 }
 
-void menuSystem() {
+void menuSystem() 
+{
     ofstream receipt("receipt.txt");
-    if (receipt) {
+    if (receipt) 
+    {
         int choice;
         double total = 0;
         
@@ -79,13 +84,15 @@ void menuSystem() {
         cout << "3. Salad - $4.99" << endl;
         cout << "4. Exit" << endl;
         
-        while (true) {
+        while (true)
+            {
             cout << "Enter your choice (1-3 to order, 4 to exit): ";
             cin >> choice;
 
             if (choice == 4) break;
 
-            switch (choice) {
+            switch (choice)
+                {
                 case 1:
                     total += 5.99;
                     receipt << "Burger - $5.99" << endl;
@@ -111,10 +118,12 @@ void menuSystem() {
     }
 }
 
-void collatzConjecture(int x) {
+void collatzConjecture(int x) 
+{
     cout << "Collatz sequence for " << x << ": ";
     int count = 0;
-    while (x != 1) {
+    while (x != 1)
+        {
         cout << x << " ";
         if (x % 2 == 0) {
             x /= 2;
@@ -134,7 +143,7 @@ bool isVowel(char ch) {
 
 int countVowels() {
     string input;
-    cout << "Enter a sequence of characters: ";
+    cout << "Enter a sequence of characters ";
     cin.ignore();
     getline(cin, input);
 
