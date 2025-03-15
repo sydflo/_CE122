@@ -19,7 +19,8 @@ void collatzConjecture(int x);
 bool isVowel(char ch);
 int countVowels();
 
-int main() {
+int main() 
+{
     findPrimes();
     
     cout << "Running menu system." << endl;
