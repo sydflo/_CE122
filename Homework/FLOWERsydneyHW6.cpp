@@ -1,3 +1,10 @@
+/*
+Sydney Flower
+CE 122
+Homework 6
+14 March 2025
+*/
+
 #include <iostream>
 #include <fstream>
 #include <cctype>
@@ -37,8 +44,6 @@ int main() {
 
     return 0;
 }
-
-// Function definitions
 
 bool isPrime(int n) {
     if (n < 2) return false;
