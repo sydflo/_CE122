@@ -78,11 +78,10 @@ void menuSystem()
     {
         int choice;
         double total = 0;
-        
-        cout << "1. Burger - $5.99" << endl;
-        cout << "2. Pizza - $8.99" << endl;
-        cout << "3. Salad - $4.99" << endl;
-        cout << "4. Exit" << endl;
+        out << "Welcome to my restaurant! Here's the menu:" << endl << endl;
+        cout << setw(10) << left << "Burger" << "$" << fixed << setprecision(2) << 8.99 << endl;
+        cout << setw(10) << "Fries" << "$" << 3.00 << endl;
+        cout << setw(10) << "Shake" << "$" << 4.22 << endl << endl;
         
         while (true)
             {
@@ -94,16 +93,16 @@ void menuSystem()
             switch (choice)
                 {
                 case 1:
-                    total += 5.99;
+                    total += 8.99;
                     receipt << "Burger - $5.99" << endl;
                     break;
                 case 2:
-                    total += 8.99;
-                    receipt << "Pizza - $8.99" << endl;
+                    total += 3.00;
+                    receipt << "Fries - $3.00" << endl;
                     break;
                 case 3:
-                    total += 4.99;
-                    receipt << "Salad - $4.99" << endl;
+                    total += 4.22;
+                    receipt << "Shake - $4.22" << endl;
                     break;
                 default:
                     cout << "Invalid choice." << endl;
