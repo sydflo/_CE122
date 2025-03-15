@@ -71,7 +71,6 @@ void findPrimes()
         cout << "Error opening file." << endl;
     }
 }
-
 void menuSystem() 
 {
     ofstream receipt("receipt.txt");
@@ -79,23 +78,24 @@ void menuSystem()
     {
         int choice;
         double total = 0;
-        out << "Welcome to my restaurant! Here's the menu:" << endl << endl;
-        cout << setw(10) << left << "Burger" << "$" << fixed << setprecision(2) << 8.99 << endl;
-        cout << setw(10) << "Fries" << "$" << 3.00 << endl;
-        cout << setw(10) << "Shake" << "$" << 4.22 << endl << endl;
+        
+        cout << "Welcome to my restaurant! Here's the menu:" << endl << endl;
+        cout << setw(10) << left << "Burger" << " $" << fixed << setprecision(2) << 8.99 << endl;
+        cout << setw(10) << "Fries" << " $" << 3.00 << endl;
+        cout << setw(10) << "Shake" << " $" << 4.22 << endl << endl;
         
         while (true)
-            {
+        {
             cout << "Enter your choice (1-3 to order, 4 to exit): ";
             cin >> choice;
 
             if (choice == 4) break;
 
             switch (choice)
-                {
+            {
                 case 1:
                     total += 8.99;
-                    receipt << "Burger - $5.99" << endl;
+                    receipt << "Burger - $8.99" << endl;
                     break;
                 case 2:
                     total += 3.00;
@@ -113,7 +113,9 @@ void menuSystem()
         
         receipt << "Total: $" << total << endl;
         receipt.close();
-    } else {
+    } 
+    else 
+    {
         cout << "Error opening receipt file." << endl;
     }
 }
