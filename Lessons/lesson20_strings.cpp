@@ -75,5 +75,14 @@ int main()
 		cout << "arr[" << index << "] = " << arr[index] << endl;
 	}
 	cout << endl;
+	double scores[5];
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "Enter quiz score " << i + 1 << ": ";
+		cin >> scores[i];
+	}
+	cout << "The scores are: ";
 	return 0;
+
 }
